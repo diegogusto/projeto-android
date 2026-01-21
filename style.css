@@ -1,0 +1,235 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: indroid;
+    src: url(fontes/idroid.otf) format(truetype);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Italiana&display=swap');
+
+:root{
+    --fundo:aliceblue;
+    --body:rgb(149, 236, 188);
+    --titulo:darkgreen;
+    --subtitulos:rgb(0, 134, 0);
+    --header:rgb(4, 255, 4);
+    --extras:rgba(149, 236, 188, 0.562);
+
+    
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--body);
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+}
+
+a{
+    color: rgb(118, 170, 67);
+    text-decoration: none;
+}
+
+p{
+    text-align: justify;
+    padding: 20px;
+}
+
+h1{
+    font-family: indroid;
+    text-align: justify;
+    color: var(--titulo);
+
+}
+
+h2{
+    font-family: indroid;
+    text-align: justify;
+    color: var(--subtitulos);
+    background: linear-gradient( to right, rgb(171, 226, 171), white 100% );
+}
+
+header{
+    text-align: center;
+    background: linear-gradient(rgb(4, 255, 4), black 120%);
+    padding: 15px;
+    border: 40px;
+    padding-top: 40px;
+}
+
+header > h1{
+    color: var(--fundo);
+    text-align: center;
+    font-family: var(--font-destaque);
+    font-size: 3em;
+    margin-top: 2px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.411);
+    
+}
+
+header > p{
+    text-align: center;
+    max-width: 600px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+    color: var(--fundo);
+    font-size: 1.2em;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.425);
+}
+
+nav{
+    text-align: justify;
+    margin-top: 50px;
+    margin-bottom: -10px;
+    padding: 10px;
+}
+
+nav > a{
+    text-decoration: none;
+    color: var(--fundo);
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+nav> a:hover{
+    background-color: var(--subtitulos);
+    color: var(--titulo);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+main{
+    background-color: var(--fundo);
+    margin: auto;
+    text-indent: 30px;
+    padding: 20px;
+    box-shadow:1px 2px 11px 0px rgba(0, 0, 0, 0.534);
+    border-radius: 0px 0px 5px 5px;
+    min-width: 320px;
+    max-width: 1000px;
+    margin-bottom: 30px;
+}
+
+main a{
+    background-color: var(--header);
+    color: darkgreen;
+    font-weight: bold;
+    padding: 2px 6px;
+}
+
+main a:hover{
+    text-decoration: underline;
+    color: var(--subtitulos);
+}
+
+main p{
+    line-height: 2em;
+    margin: 15px 0px;
+    text-align: justify;
+}
+
+.imagens{
+   width: 100%;
+   margin: auto;
+  
+}
+
+.video{
+    background-color: darkgreen;
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    position: relative;
+    padding-bottom: 56.6%;
+    text-align: center;
+}
+
+.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+#extra{ 
+    background-color: var(--extras);
+    border: 0;
+    margin: 19px;
+    padding: 0px ;
+    border-radius: 10px 10px 5px 5px;
+    text-align: justify;
+    list-style: none;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.459);
+}
+
+#extra ul{
+    columns: 2;
+}
+
+#extra li {
+    position: relative;
+    padding-left: 30px;
+    list-style: none;
+}
+
+#extra li::before {
+    content: "✓";
+    color: black;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+#extra > h3{
+    background-color: rgb(75, 150, 0) ;
+    color: var(--fundo);
+    padding: 10px 10px;
+    border-radius: 5px 5px 0px  0px;
+    text-align: justify;
+    font-family: italiana, cursive;
+    font-size: 1.6em;
+}
+
+
+footer{
+    background-color: rgb(0, 61, 0);
+    text-align: center;
+
+}
+
+footer > p{
+    text-align: center;
+    color: var(--fundo);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+  
+.paragrafo{
+    color: rgb(70, 139, 0);
+    font-weight: bold;
+
+}
+
+#bugdroid{
+    text-align: center;
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+
+
+
+
+    
